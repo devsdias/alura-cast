@@ -1,0 +1,29 @@
+.secao-horizontal .cartao{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    column-gap: 1.25rem; /*Cria um espaçamento entre os itens*/
+}
+
+.secao-horizontal .cartao__imagem {
+    /* grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1 ;
+    grid-row-end: 4; */
+    grid-column: 1/2; /*Alinhando as colunas que o item ira ocupar*/
+    grid-row: 1/4; /*Alinhando as linhas que o item ira ocupar*/
+}
+
+.secao-horizontal .cartao__botao {
+    /* grid-column: 3/4;
+    grid-row: 1/4; */
+    grid-area: 1/3/4/4; /*1 row-star , 2 column-star, 3 row-end, 4 column-end */
+}
+
+.secao-horizontal .cartao__titulo {
+    align-self: flex-end;
+}
+
+.secao-vertical .cartao {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}

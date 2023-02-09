@@ -1,0 +1,24 @@
+/*Primeiro cria-se as areas que terão o grid*/
+
+body {
+    display: grid;
+    /*Primeiro cria-se as areas que terão o grid*/
+    grid-template-areas: 
+    "aside header"
+    "aside main";
+    /*auto - calcula automaticamente conforme o campo que ocupa / FR -  fração do campo que sobrou */
+    grid-template-columns: auto 1fr;
+}
+
+/*Associando as classes as areas definidas*/
+.cabecalho {
+    grid-area: header;
+}
+
+.menu-lateral {
+    grid-area: aside;
+}
+
+.principal {
+    grid-area: main;
+}
